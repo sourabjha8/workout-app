@@ -8,8 +8,8 @@ export default function manifest(): MetadataRoute.Manifest {
       "Log sets during a workout, compare against previous sessions.",
     start_url: "/",
     display: "standalone",
-    background_color: "#ffffff",
-    theme_color: "#ffffff",
+    background_color: "#010102",
+    theme_color: "#010102",
     icons: [
       {
         src: "/icons/icon-192.png",
