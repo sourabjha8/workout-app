@@ -5,6 +5,7 @@ const VARIANT_CLASSES = {
   primary: "bg-brand text-ink",
   secondary: "bg-surface-2 border border-hairline text-ink",
   ghost: "bg-transparent text-ink",
+  danger: "bg-transparent text-danger",
 } as const;
 
 const SIZE_CLASSES = {

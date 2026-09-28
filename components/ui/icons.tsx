@@ -110,3 +110,36 @@ export function UserIcon(props: IconProps) {
     </Icon>
   );
 }
+
+export function CloseIcon(props: IconProps) {
+  return (
+    <Icon {...props}>
+      <path d="M18 6 6 18M6 6l12 12" />
+    </Icon>
+  );
+}
+
+export function TimerIcon(props: IconProps) {
+  return (
+    <Icon {...props}>
+      <circle cx="12" cy="13" r="8" />
+      <path d="M12 9v4M9 2h6M18.5 6.5 20 5" />
+    </Icon>
+  );
+}
+
+export function CheckIcon(props: IconProps) {
+  return (
+    <Icon strokeWidth={2.5} {...props}>
+      <path d="M5 13l4 4L19 7" />
+    </Icon>
+  );
+}
+
+export function InfoIcon(props: IconProps) {
+  return (
+    <Icon fill="currentColor" stroke="none" {...props}>
+      <path d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20Zm0 8a1 1 0 0 0-1 1v5a1 1 0 1 0 2 0v-5a1 1 0 0 0-1-1Zm0-4a1.25 1.25 0 1 0 0 2.5A1.25 1.25 0 0 0 12 6Z" />
+    </Icon>
+  );
+}

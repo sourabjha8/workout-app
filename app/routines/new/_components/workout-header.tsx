@@ -2,7 +2,11 @@ import { Button } from "@/components/ui/button";
 import { ChevronDownIcon } from "@/components/ui/icons";
 import Link from "next/link";
 
-export function WorkoutHeader() {
+interface WorkoutHeaderProps {
+  onFinish: () => void;
+}
+
+export function WorkoutHeader({ onFinish }: WorkoutHeaderProps) {
   return (
     <header className="sticky top-0 flex items-center gap-3 border-b border-hairline bg-canvas px-4 py-3">
       <Link
@@ -13,7 +17,7 @@ export function WorkoutHeader() {
         <ChevronDownIcon />
       </Link>
       <h1 className="flex-1 truncate text-headline text-ink">Log Workout</h1>
-      <Button variant="primary" className="rounded-full">
+      <Button variant="primary" className="rounded-full" onClick={onFinish}>
         Finish
       </Button>
     </header>

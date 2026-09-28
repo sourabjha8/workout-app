@@ -1,7 +1,15 @@
 import { Button } from "@/components/ui/button";
 import { DumbbellIcon, PlusIcon } from "@/components/ui/icons";
 
-export function ExercisesEmptyState() {
+interface ExercisesEmptyStateProps {
+  onAddExercise: () => void;
+  onRequestDiscard: () => void;
+}
+
+export function ExercisesEmptyState({
+  onAddExercise,
+  onRequestDiscard,
+}: ExercisesEmptyStateProps) {
   return (
     <section className="flex flex-col items-center gap-6 px-4 pt-16 text-center">
       <div className="flex flex-col items-center gap-2">
@@ -11,9 +19,12 @@ export function ExercisesEmptyState() {
           Add an exercise to start your workout.
         </p>
       </div>
-      <Button variant="primary" className="w-full">
+      <Button variant="primary" className="w-full" onClick={onAddExercise}>
         <PlusIcon />
-        Add Workout
+        Add Exercise
+      </Button>
+      <Button variant="danger" className="w-full" onClick={onRequestDiscard}>
+        Discard Workout
       </Button>
     </section>
   );

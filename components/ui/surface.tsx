@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils";
-import type { ComponentPropsWithoutRef } from "react";
+import type { ComponentProps } from "react";
 
 const LEVEL_CLASSES = {
   0: "bg-transparent",
@@ -11,7 +11,7 @@ const LEVEL_CLASSES = {
 
 type SurfaceLevel = keyof typeof LEVEL_CLASSES;
 
-interface SurfaceProps extends ComponentPropsWithoutRef<"div"> {
+interface SurfaceProps extends ComponentProps<"div"> {
   level?: SurfaceLevel;
 }
 

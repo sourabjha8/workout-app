@@ -7,6 +7,15 @@
   --brand-focus: #5e69d1;
   --brand-secure: #7a7fad;
 
+  /* Destructive */
+  --danger: #ff3b30;
+
+  /* Success */
+  --success: #30d158;
+
+  /* Warning */
+  --warning: #ff9f0a;
+
   /* Surface ladder */
   --canvas: #010102;
   --surface-1: #0f1011;
@@ -31,6 +40,10 @@
   --color-brand-hover: var(--brand-hover);
   --color-brand-focus: var(--brand-focus);
   --color-brand-secure: var(--brand-secure);
+
+  --color-danger: var(--danger);
+  --color-success: var(--success);
+  --color-warning: var(--warning);
 
   --color-canvas: var(--canvas);
   --color-surface-1: var(--surface-1);
